@@ -1,0 +1,12 @@
+[user]
+    name = Júnior Mascarenhas
+    email = juniorug@gmail.com
+
+[core]
+    editor = nano
+
+[init]
+    defaultBranch = main
+
+[push]
+    default = current

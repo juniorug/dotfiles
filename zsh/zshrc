@@ -1,0 +1,30 @@
+# ~/.zshrc (gerido pelos dotfiles)
+
+# Caminho do repo (assume que clonaste em ~/dotfiles)
+export DOTFILES_DIR="$HOME/dotfiles"
+
+# Zsh options úteis
+setopt AUTO_CD
+setopt HIST_IGNORE_DUPS
+setopt SHARE_HISTORY
+setopt INC_APPEND_HISTORY
+setopt EXTENDED_HISTORY
+
+# History
+HISTFILE="$HOME/.zsh_history"
+HISTSIZE=200000
+SAVEHIST=200000
+
+# Carrega Powerlevel10k config (se existir)
+[[ -f "$HOME/.p10k.zsh" ]] && source "$HOME/.p10k.zsh"
+
+# Plugins / utilitários
+source "$DOTFILES_DIR/zsh/exports.zsh"
+source "$DOTFILES_DIR/zsh/aliases.zsh"
+source "$DOTFILES_DIR/zsh/functions.zsh"
+
+# Carrega OMZ + plugins + tema
+source "$DOTFILES_DIR/zsh/plugins.zsh"
+
+# Atalhos de edição no terminal
+bindkey -e
