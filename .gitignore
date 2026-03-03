@@ -1,0 +1,56 @@
+# Dotfiles repo: keep config files tracked; ignore OS/editor/temp artifacts.
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+Icon
+._*
+
+# Windows
+Thumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+
+# Linux
+*~
+.fuse_hidden*
+.directory
+.Trash-*
+.nfs*
+
+# Editors / IDEs
+.vscode/
+.idea/
+*.iml
+*.swp
+*.swo
+*.vim
+
+# Terminal / shell temporary files
+.zsh_history
+.zsh_history.*
+.zsh_sessions/
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+
+# Node
+node_modules/
+
+# Logs
+*.log
+
+# Fastfetch cache (config should remain tracked if you add one here)
+fastfetch.log
+
+# Local env files (do not commit secrets)
+.env
+.env.*
+
+
+# Tooling/cache
+.qodo/
